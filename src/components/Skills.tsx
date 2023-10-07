@@ -23,21 +23,21 @@ const skillsData = [
 
 function Skills() {
   return (
-    <section className="px-10 mb-10 pb-10">
+    <section className="mb-10 pb-10 px-10">
       <div>
         <h3 className="text-3xl py-1 text-center dark:text-white font-burtons">
           Enchanting Talents at Your Disposal
         </h3>
-        <p className="text-md py-2 px-16 leading-8 text-[#afafbf] font-mono text-xl ">
+        <p className="text-md py-2 leading-8 text-[#afafbf] font-mono text-xl ">
           Step into a world where a diverse tapestry of enchanting talents
           stands poised at your service, each thread meticulously woven to craft
           exceptional experiences and weave the extraordinary
         </p>
       </div>
-      <div className="lg:flex gap-10">
+      <div className="lg:flex gap-10 box-border">
         {skillsData.map((skill) => {
           return (
-            <div className="text-center shadow-lg py-10 rounded-xl my-10 bg-gradient-to-r  from-gray-900 to-[#6cdbeb1a] flex-1">
+            <div className="text-center shadow-lg py-10 rounded-xl my-10 bg-gradient-to-b from-gray-900 opacity-set">
               <Image alt="design" className="mx-auto" src={skill.image} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2  ">
                 {skill.title}

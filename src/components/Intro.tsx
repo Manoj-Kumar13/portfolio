@@ -8,7 +8,7 @@ import Image from "next/image";
 
 function Intro() {
   return (
-    <div className="text-center p-10 py-10 mb-12">
+    <div className="text-center py-10 mb-12">
       <h2 className="text-5xl py-2 bg-gradient-to-b  from-cyan-500 to-teal-500 bg-clip-text text-transparent">
         Manoj Kumar
       </h2>

@@ -8,13 +8,13 @@ import Services from "@/components/Skills"
 import Intro from "@components/Intro"
 export default function Home() {
   return (
-    <>
+    <div className="p-10">
     <Intro/>
     <About/>
     <Skills/>
     <Experience/>
     <Projects/>
     <Contact/>
-    </>
+    </div>
   )
 }
