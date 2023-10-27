@@ -13,7 +13,7 @@ function Projects() {
       <h3 className="text-3xl py-1 text-center font-burtons dark:text-white ">Portfolio</h3>
       <p className="text-md py-2 font-mono text-[#afafbf] text-800 text-xl">
         Since the beginning of my journey as a freelance designer and
-        developer, I've done remote work for
+        developer, I&apos;ve done remote work for
         <span className="text-teal-500"> agencies </span>
         consulted for <span className="text-teal-500">startups </span>
         and collaborated with talanted people to create digital products

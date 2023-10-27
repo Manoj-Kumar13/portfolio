@@ -1,26 +1,4 @@
-import Image from "next/image";
-import code from "../../public/code.png";
-import design from "../../public/design.png";
-import consulting from "../../public/consulting.png";
-
-const skillsData = [
-  {
-    title: "Coding Proficiencies",
-    image: design,
-    languages: ["Photoshop", "Illustrator", "Figma", "Indesign"],
-  },
-  {
-    title: "Frameworks and Libraries",
-    image: code,
-    languages: ["Photoshop", "Illustrator", "Figma", "Indesign"],
-  },
-  {
-    title: "Tools and Platforms",
-    image: consulting,
-    languages: ["Photoshop", "Illustrator", "Figma", "Indesign"],
-  },
-];
-
+import { skillsData } from "@/utils/skillsData";
 function Skills() {
   return (
     <section className="mb-10 pb-10 px-10">
@@ -34,22 +12,21 @@ function Skills() {
           exceptional experiences and weave the extraordinary
         </p>
       </div>
-      <div className="lg:flex gap-10 box-border">
-        {skillsData.map((skill) => {
+      <div className="lg:flex gap-10 box-border flex-wrap my-10">
+        {skillsData.map((skill, index) => {
           return (
-            <div className="text-center shadow-lg py-10 rounded-xl my-10 bg-gradient-to-b from-gray-900 opacity-set">
-              <Image alt="design" className="mx-auto" src={skill.image} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2  ">
-                {skill.title}
-              </h3>
-              <p className="py-2 ">
-                Creating elegant designs suited for your needs following core
-                design theory.
-              </p>
-              <h4 className="py-4 text-teal-600">Languages</h4>
-              {skill.languages.map((language) => {
-                return <p className=" font-mono py-1">{language}</p>;
-              })}
+            <div key={index} className="flip-card">
+              {/* <div className="flip-card-inner text-center shadow-lg py-10 rounded-xl bg-gradient-to-b from-gray-900 opacity-set">
+                <skill.icon style={{ height: "80px", width: "200px", color: skill.color }} />
+              </div> */}
+              <div className="flip-card-inner">
+                <div className="flip-card-front text-center shadow-lg py-10 rounded-xl bg-gradient-to-b from-gray-900 opacity-set">
+                  <skill.icon style={{ height: "80px", width: "200px", color: skill.color }} />
+                </div>
+                <div className="flip-card-back">
+                  <h1>{skill.title}</h1>
+                </div>
+              </div>
             </div>
           );
         })}
