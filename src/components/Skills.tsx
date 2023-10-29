@@ -16,15 +16,12 @@ function Skills() {
         {skillsData.map((skill, index) => {
           return (
             <div key={index} className="flip-card">
-              {/* <div className="flip-card-inner text-center shadow-lg py-10 rounded-xl bg-gradient-to-b from-gray-900 opacity-set">
-                <skill.icon style={{ height: "80px", width: "200px", color: skill.color }} />
-              </div> */}
               <div className="flip-card-inner">
                 <div className="flip-card-front text-center shadow-lg py-10 rounded-xl bg-gradient-to-b from-gray-900 opacity-set">
                   <skill.icon style={{ height: "80px", width: "200px", color: skill.color }} />
                 </div>
-                <div className="flip-card-back">
-                  <h1>{skill.title}</h1>
+                <div className="flip-card-back shadow-lg rounded-xl bg-gradient-to-b from-gray-900 opacity-set">
+                  <h1 className="text-3xl">{skill.title}</h1>
                 </div>
               </div>
             </div>

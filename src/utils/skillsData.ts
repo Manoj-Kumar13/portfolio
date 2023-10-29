@@ -8,7 +8,7 @@ import {BsGit, BsGithub} from "react-icons/bs"
 
 export const skillsData = [
     {
-      title: "Javascript",
+      title: "JavaScript",
       icon: IoLogoJavascript,
       color: "#F0DB4F"
     },
@@ -38,7 +38,7 @@ export const skillsData = [
       color: "#5E97D0"
     },
     {
-      title: "SiPython",
+      title: "Python",
       icon: SiPython,
       color: "#FFD43B"
     },
@@ -78,7 +78,7 @@ export const skillsData = [
       color: "#EF5B25"
     },
     {
-      title: "Typescript",
+      title: "TypeScript",
       icon: SiTypescript,
       color: "#007acc"
     },
