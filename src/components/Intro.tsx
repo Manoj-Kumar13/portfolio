@@ -1,10 +1,6 @@
-import {
-  AiFillTwitterCircle,
-  AiFillLinkedin,
-  AiFillYoutube,
-} from "react-icons/ai";
 import KratosPng from "../../public/kratos-png.png"
 import Image from "next/image";
+import "../styles/test.css"
 
 function Intro() {
   return (
@@ -18,8 +14,8 @@ function Intro() {
       <p className="text-md py-5 text-[#afafbf] font-mono  leading-8 text-800 max-w-xl mx-auto md:text-xl">
         Welcome to my portfolio, where pixels turn into possibilities and lines of code shape captivating journeys.
       </p>
-      <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20">
-        <Image  alt="Authors-pic" src={KratosPng} layout="fill" objectFit="cover" />
+      <div className="image mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20">
+        <Image alt="Authors-pic" src={KratosPng} layout="fill" objectFit="cover" />
       </div>
     </div>
   );
